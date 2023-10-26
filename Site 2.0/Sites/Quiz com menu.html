@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        .navbar-nav .nav-item {
+            padding: 0px;
+            width: 100px;
+        }
+
+        .jogos-menu {
+            background-color: #1C1C1C;
+        }
+
+        .jogos-menu .dropdown-item {
+            color: white !important;
+        }
+
+        .jogos-menu .dropdown-item:hover {
+            background-color: #1C1C1C;
+            color: white !important;
+        }
+
+        .ajuda-menu {
+            background-color: #1C1C1C;
+        }
+
+        .ajuda-menu .dropdown-item {
+            color: white !important;
+        }
+
+        .ajuda-menu .dropdown-item:hover {
+            background-color: #1C1C1C;
+            color: white !important;
+        }
+
+       
+        .btn-custom {
+            border: 1px solid black;
+            background-color: #FF69B4;
+            color: white;
+        }
+
+        .btn-custom:hover {
+            background-color: #9932CC;
+        }
+
+        .btn-custom-degrade-log-in {
+            background: linear-gradient(to bottom, #FF69B4, #9932CC);
+            border: 1px solid #FF69B4;
+            color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+        }
+
+       
+        .btn-custom-degrade-sing-up {
+            background: linear-gradient(to bottom,#FF69B4, #9932CC);
+            border: 1px solid  #FF69B4;
+            color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+        }
+
+        
+        .btn-custom-degrade-log-in.btn-outline-primary,
+        .btn-custom-degrade-sing-up.btn-outline-primary {
+            color:  #FF69B4;
+        }
+        
+        
+        .form-control-margin {
+            margin-right: 10px; 
+            margin-left: 50px;
+        }
+
+        .dropdown-menu
+        {
+            background-color: #1C1C1C;
+            text-decoration: none;
+            color: white;
+            left: auto;
+        }
+
+        .white-text-custom 
+         {
+            color: white !important; 
+            margin-left: 16px;
+         }
+
+         body{
+            background-color:#363636;
+            color:white;
+            font-family: arial, sans-serif;
+        }
+
+        .banana
+        {
+            align-items: center;
+            text-align: center;
+        }
+    </style>
+</head>
+<body style="background-color: #363636;">
+<nav class="navbar navbar-dark navbar-expand-lg" style="background-color: #1C1C1C">
+    <a href="#" class="navbar-brand">
+        <img src="../Teste/LOGO.png" width="50" height="50">
+        <img src="../Teste/LUKE.png" width="70" height="50">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav1">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse " id="nav1">
+        
+        <div><ul class="navbar-nav">
+            <li class="nav-item">
+                <a href="../Sites/Menu.Pronto.html" class="nav-link d-inline">Página Principal </a>
+            </div>
+            </li>
+        </ul>
+        <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" id="linkDrop" data-toggle="dropdown">Jogos</a>
+                <div class="dropdown-menu jogos-menu">
+                    <a href="../Sites/jogo adivinha imagem.html" class="dropdown-item">Adivinha imagem</a>
+                    <a href="#" class="nav-link dropdown-toggle white-text-custom" id="submenuDrop" data-toggle="dropdown">Adivinha Número</a>
+                    <div class="dropdown-menu">
+                        <a href="../Sites/numeros 0 a 10 com menu.html" class="dropdown-item">Dificuldade Fácil</a>
+                        <a href="../Sites/numeros 0 a 50 com menu.html" class="dropdown-item">Dificuldade Médio</a>
+                        <a href="../Sites/numeros 0 a 100 com menu.html" class="dropdown-item">Dificuldade Intermédiario</a>
+                        <a href="../Sites/numeros 0 a 1000 com menu.html" class="dropdown-item">Dificuldade Dificil</a>
+                        <a href="../Sites/adivinha numero de 1-31.html" class="dropdown-item">Adivinhar 1 a 31</a>
+                    </div>
+                        <a href="../Sites/jogo quiz.html" class="dropdown-item">Quizz</a>
+                        <a href="../Sites/jogo teste tibetano.html" class="dropdown-item">Teste de Tibetano</a>
+                    </div>
+            </li>
+        </ul>
+        <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" id="linkDrop" data-toggle="dropdown">Ajuda</a>
+                <div class="dropdown-menu ajuda-menu">
+                    <a href="#" class="dropdown-item"> Fale conosco</a>
+                    <a href="#" class="dropdown-item"> Regras dos jogos</a>
+                    <a href="#" class="dropdown-item"> Suporte</a>
+                </div>
+            </li>
+        </ul>
+        <div><ul class="navbar-nav">
+            <li class="nav-item">
+                <a href="../Sites/desenvolvedores.html" class="nav-link d-inline">Desenvolvedores</a>
+            </div>
+            </li>
+        <div><ul class="navbar-nav">
+            <li class="nav-item">
+            </div>
+            </li>
+        </ul>
+        <form class="form-inline" action="">
+            <input class="form-control form-control-margin" type="text" placeholder="Pesquisar">
+            <button class="btn btn-outline-primary btn-custom" type="submit"> Buscar</button>
+        </form>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <button class="btn btn-outline-primary btn-custom-degrade-log-in" type="submit">Log In</button>
+            </li>
+            <li class="nav-item">
+                <button class="btn btn-outline-primary btn-custom-degrade-sing-up" type="submit">Sing Up</button>
+            </li>
+        </ul>
+
+</nav>
+
+<script language="Javascript" class="banana"> 
+
+       var pergunta=[];
+								pergunta[0] = "Qual é a menor unidade de memória do computador ?";
+								pergunta[1] = "O quê faz o comando CTRL + C ?";
+								pergunta[2] = "O quê faz o comando CTRL + V ?";
+								pergunta[3] = "O quê faz o comando CTRL + X ?";
+								pergunta[4] = "O que faz o comando CTRL + Z ?";
+								pergunta[5] = "Qual a funcionalidade do Word ?";
+								pergunta[6] = "Qual a funcionalidade do EXCEL ?";
+								pergunta[7] = "Qual a funcionalidade do POWERPOINT ?";
+								pergunta[8] = "O que é o Windows ?";
+								pergunta[9] = "O quê é o Linux ?";
+								pergunta[10] = "O quê faz o Paint ?";
+								
+								
+								
+								
+                                document.write( '<ol>');
+								document.write('<li>'+pergunta[0] +'</li>');
+								
+                                document.write('<form name="formQuizz"> ');						
+                               
+								document.write('<INPUT TYPE="RADIO" NAME="r0" VALUE="É o byte">É o byte </br>');
+								document.write('<INPUT TYPE="RADIO" NAME="r0" VALUE="É o bit.">É o bit  </br>');								
+								document.write('<INPUT TYPE="RADIO" NAME="r0" VALUE="É o megabyte">É o  megabyte  </br>')
+								document.write('<INPUT TYPE="RADIO" NAME="r0" VALUE="É o kbyte">É o  kbyte  <P>	');
+								
+								document.write('<li>'+pergunta[1] +'</li>');	
+								document.write('<INPUT TYPE="RADIO" NAME="r1" VALUE="Recorta tudo que está selecionado e manda para memória do computador.">Recorta tudo que está selecionado e manda para memória do computador.</br>');
+								document.write('<INPUT TYPE="RADIO" NAME="r1" VALUE="Copia tudo que está selecionado e manda para memória do computador.">Copia tudo que está selecionado e manda para memória do computador.</br>');							
+								document.write('<INPUT TYPE="RADIO" NAME="r1" VALUE="Cola as informações na tela">Cola as informações na tela</br>');
+								document.write('<INPUT TYPE="RADIO" NAME="r1" VALUE="N.D.A">N.D.A.  <P>	');
+								
+									
+								document.write('<li>'+pergunta[2] +'</li>');	
+								document.write('<INPUT TYPE="RADIO" NAME="r2" VALUE="Recorta tudo que está selecionado e manda para memória do computador.">Recorta tudo que está selecionado e manda para memória do computador.</br>');
+								document.write('<INPUT TYPE="RADIO" NAME="r2" VALUE="Copia tudo que está selecionado e manda para memória do computador.">Copia tudo que está selecionado e manda para memória do computador.</br>');							
+								document.write('<INPUT TYPE="RADIO" NAME="r2" VALUE="Pega tudo que foi enviado para memória do computador, e coloca onde você desejar.">Pega tudo que foi enviado para memória do computador, e coloca onde você desejar.</br>');
+								document.write('<INPUT TYPE="RADIO" NAME="r2" VALUE="N.D.A">N.D.A.  <P>	');
+								
+								document.write('<li>'+pergunta[3] +'</li>');	
+								document.write('<INPUT TYPE="RADIO" NAME="r3" VALUE="Recorta(apaga)tudo que está selecionado e manda para memória do computador.">Recorta tudo que está selecionado e manda para memória do computador.</br>');
+								document.write('<INPUT TYPE="RADIO" NAME="r3" VALUE="Copia tudo que está selecionado e manda para memória do computador.">Copia tudo que está selecionado e manda para memória do computador.</br>');							
+								document.write('<INPUT TYPE="RADIO" NAME="r3" VALUE="Pega tudo que foi enviado para memória do computador, e coloca onde você desejar.">Pega tudo que foi enviado para memória do computador, e coloca onde você desejar.</br>');
+								document.write('<INPUT TYPE="RADIO" NAME="r3" VALUE="N.D.A">N.D.A.  <P>	');
+								
+								document.write('<li>'+pergunta[4] +'</li>');	
+								document.write('<INPUT TYPE="RADIO" NAME="r4" VALUE="Desfaz o(s) último(s) procedimento(s).">Desfaz o(s) último(s) procedimento(s)..</br>');
+								document.write('<INPUT TYPE="RADIO" NAME="r4" VALUE="Pinta o que está selecionado de vermelho">Pinta o que está selecionado de vermelho</br>');
+								document.write('<INPUT TYPE="RADIO" NAME="r4" VALUE="Copia tudo que está selecionado e manda para memória do computador.">Copia tudo que está selecionado e manda para memória do computador.</br>');							
+								document.write('<INPUT TYPE="RADIO" NAME="r4" VALUE="Pega tudo que foi enviado para memória do computador, e coloca onde você desejar.">Pega tudo que foi enviado para memória do computador, e coloca onde você desejar.<P>	');
+								
+								document.write('<li>'+pergunta[5] +'</li>');	
+								document.write('<INPUT TYPE="RADIO" NAME="r5" VALUE="Basicamente é um editor de texto, mas tem muitas funções, tais como: Fazer Mala Direta, formulários programáveis, tabelas,formas básicas, colocar imagens , programar em visual basic, etc">Basicamente é um editor de texto, mas tem muitas funções, tais como: Fazer Mala Direta, formulários programáveis, tabelas,formas básicas, colocar imagens , programar em visual basic, etc</br>');
+								document.write('<INPUT TYPE="RADIO" NAME="r5" VALUE="É um Processador de cáculos">É um Processador de Cáculos.</br>');		
+								document.write('<INPUT TYPE="RADIO" NAME="r5" VALUE="É um Editor de imagens">É um Editor de imagens.</br>');
+								document.write('<INPUT TYPE="RADIO" NAME="r5" VALUE="É um Compactador de Arquivos">É um Compactador de Arquivos.<P>	');
+								
+								document.write('<li>'+pergunta[6] +'</li>');	
+								document.write('<INPUT TYPE="RADIO" NAME="r6" VALUE="Microsoft Excel é um poderoso  editor de planilhas produzido pela Microsoft, onde podemos fazer gráficos, diversos cálculos em plánilhas, tabelas dinâmicas,programar em visual basic, etc ">Microsoft Excel é um poderoso  editor de planilhas produzido pela Microsoft, onde podemos fazer gráficos, diversos cálculos em plánilhas, tabelas dinâmicas,programar em visual basic, etc  </br>');
+								document.write('<INPUT TYPE="RADIO" NAME="r6" VALUE="É um Processador de cáculos">É um Processador de Cáculos.</br>');		
+								document.write('<INPUT TYPE="RADIO" NAME="r6" VALUE="É um Editor de imagens">É um Editor de imagens.</br>');
+								document.write('<INPUT TYPE="RADIO" NAME="r6" VALUE="É um Compactador de Arquivos">É um Compactador de Arquivos.<P>	');
+						        
+	
+								document.write('<li>'+pergunta[7] +'</li>');	
+								document.write('<INPUT TYPE="RADIO" NAME="r7" VALUE="PowerPoint apresentações funcionam como apresentações de slides. Para transmitir uma mensagem ou uma história, você a divide em slides. Pense em cada slide como uma tela em branco para as imagens e palavras que ajudam você a falar com sua história.">PowerPoint apresentações funcionam como apresentações de slides. Para transmitir uma mensagem ou uma história, você a divide em slides. Pense em cada slide como uma tela em branco para as imagens e palavras que ajudam você a falar com sua história. </br>');
+								document.write('<INPUT TYPE="RADIO" NAME="r7" VALUE="É um Processador de cáculos">É um Processador de Cáculos.</br>');		
+								document.write('<INPUT TYPE="RADIO" NAME="r7" VALUE="É um Editor de imagens">É um Editor de imagens.</br>');
+								document.write('<INPUT TYPE="RADIO" NAME="r7" VALUE="É um Compactador de Arquivos">É um Compactador de Arquivos.<P>	');
+								
+								document.write('<li>'+pergunta[8] +'</li>');	
+								document.write('<INPUT TYPE="RADIO" NAME="r8" VALUE="É um sistema operacional de código fechado, e seu uso é pago.">É um sistema operacional de código fechado, e seu uso é pago.</br>');
+								document.write('<INPUT TYPE="RADIO" NAME="r8" VALUE="É um sistema operacional gratuito.">É um sistema operacional gratuito.</br>');		
+								document.write('<INPUT TYPE="RADIO" NAME="r8" VALUE="É um sistema operacional da google.">É um sistema operacional da google.</br>');
+								document.write('<INPUT TYPE="RADIO" NAME="r8" VALUE="É um programa Cobol">É um programa Cobol<P>	');
+								
+								document.write('<li>'+pergunta[9] +'</li>');	
+								document.write('<INPUT TYPE="RADIO" NAME="r9" VALUE="É um sistema operacional da Google.">É um sistema operacional da Google.</br>');
+								document.write('<INPUT TYPE="RADIO" NAME="r9" VALUE="É um sistema operacional da Apple.">É um sistema operacional da Apple.</br>');		
+								document.write('<INPUT TYPE="RADIO" NAME="r9" VALUE="É um sistema operacional da Sansung.">É um sistema operacional da Sansung.</br>');
+								document.write('<INPUT TYPE="RADIO" NAME="r9" VALUE="É um sistema operacional de código aberto e gratuito.">É um sistema operacional de código aberto e gratuito.<P>	');
+								
+								document.write('<li>'+pergunta[10] +'</li>');	
+								document.write('<INPUT TYPE="RADIO" NAME="r10" VALUE="É um sistema operacional da Apple.">É um sistema operacional da Apple.</br>');
+								document.write('<INPUT TYPE="RADIO" NAME="r10" VALUE="É um sistema operacional da Sansung.">É um sistema operacional da Sansung.</br>');		
+								document.write('<INPUT TYPE="RADIO" NAME="r10" VALUE="É um editor de imagens da microsoft que vem junto com o Windows.">É um editor de imagens da microsoft que vem junto com o Windows.</br>');
+								document.write('<INPUT TYPE="RADIO" NAME="r10" VALUE="É um sistema operacional de código aberto e gratuito.">É um sistema operacional de código aberto e gratuito.<P>	');
+								
+								
+								
+								
+
+								document.write('</ol> ');
+							
+						        document.write('<input type="button" name="verifica" value="Ver o Resultado" onclick="respostas()">');
+								document.write('<input type="reset" name="limpar" value="Limpar">');
+								document.write('</form> ');	
+								 
+								
+								
+</script>
+<script>
+function respostas(){
+       
+       var acertos=0;
+	   
+       var resp0=document.formQuizz.r0.value;
+	   var resp1=document.formQuizz.r1.value;
+	   var resp2=document.formQuizz.r2.value;
+	   var resp3=document.formQuizz.r3.value;
+	   var resp4=document.formQuizz.r4.value;
+	   var resp5=document.formQuizz.r5.value;
+	   var resp6=document.formQuizz.r6.value;
+	   var resp7=document.formQuizz.r7.value;
+	   var resp8=document.formQuizz.r8.value;
+	   var resp9=document.formQuizz.r9.value;
+	   var resp10=document.formQuizz.r10.value;
+       
+	   var resposta=[];
+	    resposta[0] = "É o bit.";
+		resposta[1] = "Copia tudo que está selecionado e manda para memória do computador.";
+		resposta[2] = "Pega tudo que foi enviado para memória do computador, e coloca onde você desejar.";
+		resposta[3] = "Recorta(apaga)tudo que está selecionado e manda para memória do computador.";
+		resposta[4] = "Desfaz o(s) último(s) procedimento(s).";
+		resposta[5] = "Basicamente é um editor de texto, mas tem muitas funções, tais como: Fazer Mala Direta, formulários programáveis, tabelas,formas básicas, colocar imagens , programar em visual basic, etc";
+		resposta[6] = "Microsoft Excel é um poderoso  editor de planilhas produzido pela Microsoft, onde podemos fazer gráficos, diversos cálculos em plánilhas, tabelas dinâmicas,programar em visual basic, etc ";
+		resposta[7] = "PowerPoint apresentações funcionam como apresentações de slides. Para transmitir uma mensagem ou uma história, você a divide em slides. Pense em cada slide como uma tela em branco para as imagens e palavras que ajudam você a falar com sua história.";
+		resposta[8] = "É um sistema operacional de código fechado, e seu uso é pago.";
+		resposta[9] = "É um sistema operacional de código aberto e gratuito.";
+		resposta[10] = "É um editor de imagens da microsoft que vem junto com o Windows.";
+		
+		
+	 
+		
+		if(resp0 == resposta[0]) acertos=acertos+1;
+		if(resp1 == resposta[1]) acertos=acertos+1;
+		if(resp2 == resposta[2]) acertos=acertos+1;
+		if(resp3 == resposta[3]) acertos=acertos+1;
+		if(resp4 == resposta[4]) acertos=acertos+1;
+		if(resp5 == resposta[5]) acertos=acertos+1;
+		if(resp6 == resposta[6]) acertos=acertos+1;
+		if(resp7 == resposta[7]) acertos=acertos+1;
+		if(resp8 == resposta[8]) acertos=acertos+1;
+		if(resp9 == resposta[9]) acertos=acertos+1;
+	    if(resp10 == resposta[10]) acertos=acertos+1;
+		if (acertos!=0)
+		{
+		erros=11-acertos;
+		porcentagem=(acertos/11)*100;
+		alert('Total de Acertos ='+acertos + ' com um total de ' + Math.round(porcentagem)+ ' %  e errou '+ erros+' questão(ões)'); 
+		if(Math.round(porcentagem)<=31) alert ('Que fraquinho, somente ' + Math.round(porcentagem)+ ' % ');
+		else  if (Math.round(porcentagem)<50) alert ('Por pouco você não chegou a 50%, pois acertou somente ' + Math.round(porcentagem)+ ' % ');
+		else  if (Math.round(porcentagem)<=69) alert ('Fez uma média razoável , entre 50% e 69%,pois acertou ' + Math.round(porcentagem)+ ' % ');
+		else  if (Math.round(porcentagem)<=79) alert ('Está bem , ficou entre 50% e 79%, pois acertou ' + Math.round(porcentagem)+ ' % ');
+		else  if (Math.round(porcentagem)<=89) alert ('Está melhorando ,pois ficou entre 80% e 89% e acertou ' + Math.round(porcentagem)+ ' % ');
+		else  if (Math.round(porcentagem)<=95) alert ('Muito bom , ficou entre 90% e 95%, pois acertou ' + Math.round(porcentagem)+ ' % ');
+		else  alert ('Excelente, você é um expert  ,  pois acertou ' + Math.round(porcentagem)+ ' % ');
+		  
+		
+		
+		}
+		else alert('Ou você errou tudo, ou não escolheu nada');
+		  
+		
+		
+		
+
+                                            
+                                                }
+</script>
+</body>
+</html>

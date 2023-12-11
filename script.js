@@ -26,7 +26,7 @@ $(document).ready(function() {
         }
     });
 
-    // Função para salvar as configurações de tema no localStorage
+    
     function salvarConfiguracoesTema(tema) {
         localStorage.setItem('tema', tema);
     }

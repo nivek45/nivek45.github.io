@@ -1,0 +1,243 @@
+/* Estilo Geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+  
+body {
+    font-size: 15px;
+    color: #333;
+    background-color: #1F2235;
+    line-height: 1.6;
+    padding-top: 70px;
+}
+  
+h1, h2, h3, h4, h5, h6 {
+    color: #fff;
+    font-weight: 600;
+}
+  
+a {
+    color: #ff4a57;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+  
+a:hover {
+    color: #fff;
+}
+
+/* Navbar */
+.navbar {
+    background: #1F2235;
+    transition: top 0.3s; /* Transição para esconder ao rolar */
+    width: 100%;
+    padding: 10px 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-brand p {
+    color: #ff4a57;
+    font-weight: 700;
+    font-size: 24px;
+    margin: 0;
+}
+
+.navbar-nav {
+    display: flex;
+    gap: 15px;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: #ff4a57;
+    font-weight: 600;
+    padding: 8px 15px;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #fff;
+}
+
+/* Efeito de Transição para esconder ao rolar */
+.hidden-navbar {
+    top: -80px; /* Esconde a navbar ao rolar para baixo */
+    transition: top 0.5s;
+}
+
+/* Banner */
+.main_banner {
+    background: url('images/banner.jpg') center center no-repeat;
+    background-size: cover;
+    color: #fff;
+    padding: 100px 0;
+    text-align: left;
+}
+
+.banner_content h1 {
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.banner_content p {
+    font-size: 16px;
+    margin: 20px 0;
+}
+
+/* Estilo dos botões de redes sociais */
+.banner_social_link {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+}
+
+.banner_social_link li {
+    display: inline-block;
+}
+
+.banner_social_link li a {
+    color: #ff4a57;
+    border: 1px solid #ff4a57;
+    padding: 12px;
+    width: 40px; /* Largura igual à altura */
+    height: 40px; /* Altura igual à largura */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: background 0.3s, color 0.3s;
+}
+
+.banner_social_link li a:hover {
+    background: #ff4a57;
+    color: #fff;
+}
+
+/* Seção Geral */
+.section_padding {
+    padding: 80px 0;
+}
+
+.section_heading {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.section_heading h2 {
+    color: #fff;
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+.section_heading .sm_border {
+    display: inline-block;
+    height: 3px;
+    width: 70px;
+    background-color: #ff4a57;
+    margin-top: 15px;
+}
+
+/* Sobre */
+.portfolio-column {
+    background: #2c2f3f;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    color: #ccc;
+    width: calc(33.33% - 20px); /* Definindo cada coluna com 1/3 da largura */
+    float: left;
+    margin-right: 10px;
+}
+
+.portfolio-column:nth-child(3) {
+    margin-right: 0;
+}
+
+.portfolio-column img {
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.portfolio-column h3 {
+    color: #ff4a57;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+/* Certificados */
+#certificates img {
+    border: 3px solid #ff4a57;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    transition: transform 0.3s;
+}
+
+#certificates img:hover {
+    transform: scale(1.05);
+}
+
+/* Contato */
+.form .form-group input, .form .form-group textarea {
+    background: #2c2f3f;
+    border: 1px solid #e3e3e3;
+    color: #fff;
+    border-radius: 0;
+    margin-bottom: 20px;
+}
+
+.form .form-group input:focus, .form .form-group textarea:focus {
+    border-color: #ff4a57;
+}
+
+/* Botões */
+.main_btn {
+    color: #fff;
+    background: #ff4a57;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: background 0.3s, color 0.3s;
+}
+
+.main_btn:hover {
+    background: #fff;
+    color: #ff4a57;
+    border: 1px solid #ff4a57;
+}
+
+/* Footer */
+.footer {
+    background: #181a27;
+    padding: 20px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.footer p {
+    margin: 0;
+    color: #ccc;
+}
+
+.banner-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; 
+}
+
+.banner-images i {
+    font-size: 150px; 
+    color: #ff4a57;
+    opacity: 50%;
+}
+
+.portfolio-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Três colunas de tamanhos iguais */
+}

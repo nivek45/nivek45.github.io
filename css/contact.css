@@ -1,0 +1,146 @@
+/* Estilo Geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #1F2235;
+    color: #ccc;
+}
+
+/* Seção de Sobre Mim */
+#about {
+    padding: 80px 0;
+}
+
+#about h1 {
+    color: #fff;
+    font-weight: 700;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+#about p {
+    color: #bbb;
+    font-size: 16px;
+    margin-bottom: 30px;
+    line-height: 1.8;
+}
+
+#about ul {
+    font-size: 16px;
+    line-height: 2;
+}
+
+#about ul li {
+    margin-bottom: 10px;
+}
+
+#about ul li strong {
+    color: #ff4a57;
+}
+
+/* Botão */
+.main_btn {
+    color: #fff;
+    background: #ff4a57;
+    padding: 10px 25px;
+    font-weight: 600;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: background 0.3s, color 0.3s;
+}
+
+.main_btn:hover {
+    background: #fff;
+    color: #ff4a57;
+}
+
+@media (max-width: 768px) {
+    #about .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #about .col-lg-6 img {
+        max-width: 60%;
+        margin-bottom: 20px;
+    }
+}
+
+#about .col-lg-6 img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    max-width: none; /* Remove qualquer limitação de largura */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+
+.back_btn {
+    display: inline-block;
+    color: #fff;
+    background: #ff4a57;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.3s, color 0.3s;
+    margin-top: 20px;
+}
+
+.back_btn:hover {
+    background: #fff;
+    color: #ff4a57;
+    border: 1px solid #ff4a57;
+}
+
+.navbar {
+    background: #1F2235;
+    transition: top 0.3s;
+    width: 100%;
+    padding: 10px 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-brand p {
+    color: #ff4a57;
+    font-weight: 700;
+    font-size: 24px;
+    margin: 0;
+}
+
+.navbar-nav {
+    display: flex;
+    gap: 15px;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: #ff4a57;
+    font-weight: 600;
+    padding: 8px 15px;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #fff;
+}
+
+.hidden-navbar {
+    top: -80px;
+    transition: top 0.5s;
+}
+
+.row
+{
+    padding-top: 100px;
+}
+

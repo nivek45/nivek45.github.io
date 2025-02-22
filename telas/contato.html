@@ -9,11 +9,22 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap.min.css" rel="stylesheet"/>
     <link href="../css/contact.css" rel="stylesheet"/>
     <link rel="icon" href="../icon/monitor.png" type="image/png">
+    <style>
+        @media (max-width: 768px) {
+            .profile-circle {
+                width: 80% !important;
+                max-width: 300px !important;
+                height: auto !important;
+                aspect-ratio: 1/1;
+            }
+        }
+    </style>
 </head>
 <body>
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
-            <a href="../index.html" class="navbar-brand" style="color: #ff4a57; font-size: x-large;">Kevin Ramos</a>
+            <a href="../index.html" class="navbar-brand" style="color: #ff4a57; font-size: x-large;">Portfólio</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -27,16 +38,15 @@
             </div>
         </div>
     </nav>
+    
     <section id="about" class="dark_bg section_padding">
         <div class="container d-flex align-items-center">
             <div class="row">
-                <!-- Imagem à Esquerda -->
                 <div class="col-lg-6 text-center mb-4 mb-lg-0">
                     <div class="profile-circle" style="width: 500px; height: 500px; border-radius: 50%; overflow: hidden; margin: 0 auto;">
                         <img src="../imgs/kevingoat.jpeg" alt="Foto de Perfil" class="shadow-4-strong img-fluid" style="width: 100%; height: 100%; object-fit: cover; object-position: center 0%;">
                     </div>
                 </div>
-                <!-- Conteúdo à Direita -->
                 <div class="col-lg-6">
                     <h1 class="text-white">Olá, Eu Sou Kevin Ramos</h1>
                     <p class="text-white">
@@ -46,7 +56,7 @@
                         <li><strong>Nome:</strong> Kevin Ramos</li>
                         <li><strong>Idade:</strong> 18</li>
                         <li><strong>Endereço:</strong> Sorocaba, Brasil</li>
-                        <li><strong>Telefone:</strong> +55 11 98765-4321</li>
+                        <li><strong>Telefone:</strong> +55 15 98765-4321</li>
                         <li><strong>Email:</strong> kevinramosx45@gmail.com</li>
                     </ul>
                     <a href="../Curriculo/KEVIN_20RAMOS_20-copia.pdf" class="btn main_btn mt-3" download>
